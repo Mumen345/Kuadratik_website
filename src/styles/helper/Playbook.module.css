@@ -1,0 +1,87 @@
+.containers{
+    background: white;
+    padding: 2em 4em;
+}
+.playbook{
+    background: #000000;
+    padding: 4em;
+    color: #fff;
+    margin: 5em 3em;
+    border-radius: 28px;
+}
+.playbook h1{
+    text-align: center;
+    margin-bottom: 2em;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 48px;
+    color: #FFFFFF;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3em;
+    margin: .5em 2em;
+
+}
+.grid div{
+   max-width: 500px;
+}
+.grid h3{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 140%;
+    color: #FFFFFF;
+}
+.grid p{
+    margin: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 32px;
+    color: #FFFFFF;
+}
+@media (max-width:900px) {
+    .containers{
+        padding: 1em 1em;
+        /* margin: 0 0 ; */
+    }
+    .playbook{
+        padding: 1em;
+        margin: 2em 1em;
+    }
+    .playbook h1{
+        font-size: 28px;
+    }
+    .grid{
+        grid-template-columns: 1fr;
+        
+    }
+    .grid div{
+        max-width: max-content;
+    }
+    .grid h3{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 140%;
+        color: #FFFFFF;
+    }
+    .grid p{
+        margin: 0;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 200;
+        font-size: 16px;
+        line-height: 32px;
+        color: #FFFFFF;
+    }
+}

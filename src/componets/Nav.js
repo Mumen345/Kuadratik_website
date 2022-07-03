@@ -11,7 +11,7 @@ const showNavBar=()=>{
   return (
     <nav>
         <div className={styles.nav}> 
-        <img src="/images/logo.svg"/>
+        <img src="/images/logo.svg" className={styles.navimg}/>
             <ul ref={navRef} className={styles.flow}>
                 <li><Link href='/'>About</Link></li>
                 <li><Link href='/'>Services</Link></li>

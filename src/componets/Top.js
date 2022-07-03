@@ -14,7 +14,7 @@ export default function Top() {
         
         <div className={styles.product}>
             <h2>Products</h2>
-            <p className={styles.p}>An instance helps Streamline your workflows, create more value and focus on what’s important</p>
+            <p className={styles.p}>An instance helps Streamline your workflows, create more value and focus on what&#8217;s important</p>
             <div className={styles.product_grid}>
                 <div className={styles.eki}>
                     <img src="/images/eki-screen.svg" className={styles.p_screen} />

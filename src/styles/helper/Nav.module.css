@@ -8,6 +8,7 @@
 }
 .nav img{
     width: 150px;
+   
 }
 .nav ul{
     display: flex;
@@ -46,9 +47,16 @@
 } 
 
 @media (max-width:900px) {
+    .nav{
+        padding: 1em 1em;
+    }
+    .navimg{
+        z-index: 55;
+    }
     .nav_btn{
         display: block;
         margin-left: auto;
+        z-index: 0;
 
     }
     .nav .flow{
@@ -63,8 +71,8 @@
         place-items:center;
         text-align: center;
         transition: 1s;
-        transform: translateY(-100%);
-        z-index: 2;
+        transform: translateX(100%);
+        z-index: 49;
     }
     .nav .flow.responsive_nav{
     transform: none;
