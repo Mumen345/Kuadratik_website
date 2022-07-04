@@ -1,0 +1,118 @@
+.container{
+background-color: white;
+padding-top:3em ;
+}
+.services{
+    background: #000000;
+    border-radius: 30px;
+    color: white;
+    padding:3em 4em;
+    width:90%;
+    margin: 1em auto;
+
+}
+.services h1{
+    text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    color: #FFFFFF;
+    margin-bottom:2.5em;
+}
+.grid_card{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero{
+    margin-left: auto;
+}
+
+.card{
+    display: grid;
+    gap: 3em;
+    margin-right: auto;
+}
+.card .details{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1em;
+}
+.card .details h3{
+    margin-top: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 124.5%;
+    color: #FFFFFF;
+}
+.card .details p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 33px;
+    color: #FFFFFF;
+}
+.affiliates{
+    background: #E2E2E2;
+    width: 95%;
+    margin: 3em auto;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.5em .5em;
+}
+@media (max-width:900px) {
+    .services{
+        padding: 1em 1.5em;
+    }
+    .services h1{
+        font-size: 28px;
+    }
+    .grid_card{
+        grid-template-columns: 1fr;
+        gap: 2em;
+    }
+    .card{
+        order: 2;
+    }
+    .hero{
+        order: 1;
+        margin-left: 0;
+        margin: 0 auto;
+    }
+    .hero img{
+        width: 270px;
+        margin-left: 0;
+        margin-top: 1em;
+    }
+    .card .details{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
+    }
+    .card .details h3{
+        font-size: 20;
+    }
+    .card .details p{
+        font-size: 16px;
+    }
+    .affiliates{
+        justify-content: center;
+        gap: 2em;
+        padding:.5em .2em;
+        border-radius: 10px;
+    }
+    .affiliates img{
+        width: 50px;
+    }
+}

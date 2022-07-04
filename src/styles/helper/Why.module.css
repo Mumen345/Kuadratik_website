@@ -1,0 +1,129 @@
+.container{
+    background: #FFCB14;
+    padding: 3em;
+}
+.why{
+    background: #fff;
+    padding: 4em;
+    border-radius: 35.0613px;
+}
+.text{
+    width: 50%;
+}
+.text h1{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 51px;
+    color: #404040;
+}
+.details{
+    margin-top: 3em;
+    color: #404040;
+}
+.details h3{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    
+}
+.details p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: #404040;
+}
+.scores{
+    margin: 2em 0;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    color: #FF6C01;
+}
+.project{
+    color: #0386FF;
+    
+}
+.years{
+    color: #FF007A;
+    
+}
+.scores h4{
+margin: 0;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 28.3984px;
+line-height: 31px;
+text-align: center;
+
+}
+.scores p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 31px;
+    text-align: center;
+    
+    margin-top: 0;
+}
+@media (max-width:900px){
+    .container{
+        background: #FFCB14;
+        padding: 1em;
+    }
+    .why{
+        background: #fff;
+        padding: 1em;
+        border-radius: 35.0613px;
+    }
+    .text{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .text h1{
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 51px;
+        color: #404040;
+    }
+    .details h3{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 26px;
+        
+    }
+    .details p{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: #404040;
+    }
+    .scores h4{
+        margin: 0;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 22px;
+        line-height: 31px;
+        text-align: center;
+        
+        }
+        .scores p{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            text-align: center;
+            margin-top: 0;
+        }
+}
