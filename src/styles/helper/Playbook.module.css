@@ -50,12 +50,15 @@
 }
 @media (max-width:900px) {
     .containers{
-        padding: 1em 1em;
+        padding: 0em 0em;
         /* margin: 0 0 ; */
+        
     }
     .playbook{
         padding: 1em;
-        margin: 2em 1em;
+        margin: 0em 0em;
+        border-radius: 0;
+        margin-bottom: .1em;
     }
     .playbook h1{
         font-size: 28px;

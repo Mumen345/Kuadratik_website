@@ -73,13 +73,13 @@ text-align: center;
 }
 @media (max-width:900px){
     .container{
-        background: #FFCB14;
-        padding: 1em;
+        padding: 0em;
     }
     .why{
         background: #fff;
         padding: 1em;
-        border-radius: 35.0613px;
+        border-radius: 0;
+        width: 100%;
     }
     .text{
         width: 90%;
