@@ -1,0 +1,104 @@
+.container{
+    position: relative;
+    
+}
+.header{
+    height: 175px;
+    background-image: url("/images/Photo.png");
+    display: flex;
+    /* padding: 2em; */
+   
+}
+.header h1{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 54px;
+    line-height: 80px;
+    color: #FFFFFF;
+    padding-left: 2em;
+    
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.details{
+    padding-inline:3em;
+    padding-top:1.5em;
+    padding-bottom:3em;
+}
+.details h1{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #404040;
+}
+.details p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 170.9%;
+    letter-spacing: 0.04em;
+    color: #474747;
+    margin-bottom: 2em;
+}
+
+
+.img img{
+    position: absolute;
+    top: 70px;
+    right: 70px;
+}
+@media (max-width:900px){
+    .header{
+        justify-content: center;
+        height: 140px;
+    }
+    .header h1{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 45px;
+        line-height: 80px;
+        color: #FFFFFF;
+        padding-left: 0em;
+        text-align: center;
+        
+    }
+    .img img{
+        position: initial;
+        display: none;
+    }
+    .grid{
+        grid-template-columns: 1fr;
+    }
+    
+    .details{
+        padding-inline:1.5em;
+        padding-top:1.5em;
+        padding-bottom:1em;
+    }
+    .details h1{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 44px;
+        color: #404040;
+    }
+    .details p{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 150.9%;
+        letter-spacing: 0.04em;
+        color: #474747;
+        margin-bottom: 2em;
+        text-align: justify;
+    }
+}

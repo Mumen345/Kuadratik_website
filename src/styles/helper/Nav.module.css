@@ -5,6 +5,7 @@
     max-height: 100%;
     display: flex;
     align-items: center;
+    
 }
 .nav img{
     width: 150px;
@@ -38,24 +39,38 @@
 }
 
 .nav_btn{
-    /* width: 2px; */
-    height: 40px;
+    margin-right: 10px;
+    top: 20px;
     display: none;
-    z-index: 0;
-    text-align: end;
-    left: 10px;
 } 
-
+.one{
+    background-color: #fff;
+    height: 4px;
+    width: 25px;
+    margin-bottom: 6px;
+}
+.two{
+    background-color: #fff;
+    height: 4px;
+    width: 25px;
+    margin-bottom: 6px;
+}
+.three{
+    background-color: #fff;
+    height: 4px;
+    width: 25px;
+    /* margin-bottom: 2px; */
+}
 @media (max-width:900px) {
     .nav{
-        padding: 1em 1em;
+        padding: 1em .2em;
     }
-    .navimg{
+    /* .navimg{
         z-index: 55;
-    }
+    } */
     .nav_btn{
         display: block;
-        margin-left: auto;
+        /* margin-left: auto; */
         z-index: 0;
 
     }
@@ -66,25 +81,29 @@
         justify-content: center;
         align-items: center; 
         gap: 1.5rem;
-        background-color: rgba(32, 32, 32, 1);
+        background-color: #000000;
         margin-left: 0;
         place-items:center;
         text-align: center;
-        transition: 1s;
+        transition: .5s;
         transform: translateX(100%);
         z-index: 49;
+        margin: 0 0 0 0;
+    }
+    .nav ul{
+        margin-left: 0;
+        padding-left: 0;
     }
     .nav .flow.responsive_nav{
     transform: none;
     }
     .nav_btn{
-        position: absolute;
-        top: 14px;
-        right:2px;
+        margin-left: auto;
     }
     .nav_btn.nav_close_btn{
         position: absolute;
         top: 10px;
         right:2px;
+        width: 22px;
     }
 }

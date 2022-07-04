@@ -126,9 +126,10 @@
     line-height: 36px;
     }
     .product{
-        width:95%;
-        padding: .1em .1em;
+        width:100%;
+        padding: .1em 1em;
         position: initial;
+        border-radius: 0;
     }
     .product .p{
         width: 100%;

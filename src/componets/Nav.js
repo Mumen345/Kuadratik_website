@@ -11,10 +11,10 @@ const showNavBar=()=>{
   return (
     <nav>
         <div className={styles.nav}> 
-        <img src="/images/logo.svg" className={styles.navimg}/>
+       <Link href='/'><a><img src="/images/logo.svg" className={styles.navimg}/></a></Link>
             <ul ref={navRef} className={styles.flow}>
-                <li><Link href='/'>About</Link></li>
-                <li><Link href='/'>Services</Link></li>
+                <li><Link href='/about'>About</Link></li>
+                <li><Link href='/#Services'>Services</Link></li>
                 <li className={styles.connect}><Link href='/'>Connect</Link></li>
                 
                 <img className={`${styles.nav_btn} ${styles.nav_close_btn}`} src="/images/close1.svg" 
@@ -22,11 +22,14 @@ const showNavBar=()=>{
                 onClick={showNavBar}
                 />
             </ul>
-            <img className={styles.nav_btn} 
-            src="/images/menu5.svg" 
-             style={{filter:'invert(100%)'}} 
+            <div className={styles.nav_btn}
              onClick={showNavBar}
-             />
+            >
+              <div className={styles.one}></div>
+              <div className={styles.two}></div>
+              <div className={styles.three}></div>
+            </div>
+   
         </div>
     </nav>
   )
