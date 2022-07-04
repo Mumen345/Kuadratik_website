@@ -23,7 +23,7 @@ export default function Nav() {
             <Link href="/#Services">Services</Link>
           </li>
           <li className={styles.connect}>
-            <Link href="/connect">Connect</Link>
+            <Link href="/">Connect</Link>
           </li>
 
           <img
