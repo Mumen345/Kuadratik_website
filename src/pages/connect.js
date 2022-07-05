@@ -16,7 +16,7 @@ export default function connect() {
               </label>
               <br />
 
-              <div class={styles.Iconinside}>
+              <div className={styles.Iconinside}>
                 <input type="email" placeholder="Email address" />
                 <img src="images/extra/contact-light.svg" alt="contactus img" />
               </div>
@@ -26,7 +26,7 @@ export default function connect() {
                 Email
               </label>
               <br />
-              <div class={styles.Iconinside}>
+              <div className={styles.Iconinside}>
                 <input type="email" placeholder="Email address" />
                 <img src="images/extra/message-box.svg" alt="contactus img" />
               </div>
