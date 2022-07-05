@@ -1,15 +1,40 @@
 import styles from '../styles/helper/Top.module.css'
+import TextTransition, { presets } from "react-text-transition";
+import {useState, useEffect} from 'react'
+
+const TEXTS = [
+    "creativity",
+    "innovations",
+    "projects",
+    "designs"
+  ];
 
 export default function Top() {
+
+const [index, setIndex] =useState(0);
+
+  useEffect(() => {
+    const intervalId = setInterval(() =>
+      setIndex(index => index + 1),
+      3000 // every 3 seconds
+    );
+    return () => clearTimeout(intervalId);
+  }, []);
+
   return (
     <div className={styles.container}>
         <div className={styles.header}>
             <div>
-            <h1>Activate <br /> your <span>creativity </span> </h1>
+            <h1>Activate  your 
+            <TextTransition springConfig={presets.default} className={styles.transition}>
+                 {TEXTS[index % TEXTS.length]}
+            </TextTransition>
+            {/* <span>creativity </span>  */}
+            </h1>
             <p>Build customer-driven products leveraging Kuadratiks team of experts who explore the latest technology for your optimal experience.</p>
-            <div></div>
             </div>
-            <div className={styles.curve}></div>
+            {/*     INPUT THE GIF IN THE DIV BELOW */}
+                <div>      </div>
         </div>
         
         <div className={styles.product}>

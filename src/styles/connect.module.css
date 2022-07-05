@@ -1,3 +1,123 @@
-.container{
+.inputName {
     width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #A0A0A0;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+}
+
+.container {
+    font-family: 'Inter';
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    margin: 100px auto;
+}
+
+.labeltext {
+    font-weight: 600;
+    color: #585858;
+}
+
+.contactUsButton {
+    width: 100%;
+    background-color: #040F2B;
+    color: #ffffff;
+    border: none;
+    padding: 13px 0;
+    border-radius: 100px;
+    margin-top: 30px;
+}
+
+.Iconinside {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #A0A0A0;
+    border-radius: 4px;
+    padding: 15px;
+    width: 100%;
+    margin: 8px 0 30px 0;
+    margin-left: auto;
+    box-sizing: border-box;
+}
+
+.Iconinside input {
+    border: none;
+    outline: none;
+}
+
+.contactDiv {
+    width: 100%;
+    padding: 30px;
+}
+
+.contactDiv h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 22.17px;
+}
+
+
+/* Mobile Version  */
+@media only screen and (max-width: 1188px) {
+
+    .container {
+        display: flex;
+        justify-content: center;
+        width: 90%;
+        margin: 50px auto;
+    }
+
+    .contact_img_responsive {
+        display: block;
+    }
+
+    .inputDiv {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+
+    .container {
+        display: block;
+        justify-content: center;
+        width: 60%;
+        margin: -30px auto 30px;
+    }
+
+    .contactDiv {
+        width: 100%;
+        padding: 30px;
+    }
+
+    .contact_img {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .container {
+        display: block;
+        justify-content: center;
+        width: 100%;
+        margin: -30px auto 30px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        display: block;
+        justify-content: center;
+        width: 90%;
+        margin: 0px auto 30px;
+    }
+
+    .contactDiv {
+        width: 100%;
+        padding: 10px;
+    }
 }
