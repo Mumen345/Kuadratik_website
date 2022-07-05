@@ -34,6 +34,18 @@ export default function Playbook() {
                      be rest assured.</p>
             </div>
         </div>
+        <div>
+            <img src="/images/extra/bulb.svg" className={styles.one} />
+            <img src="/images/extra/Group.svg" className={styles.two} />
+            <img src="/images/extra/Rectangle 368.svg" className={styles.three} />
+            <img src="/images/extra/Rectangle 369.svg" className={styles.four} />
+            <img src="/images/extra/Vector (1).svg" className={styles.five} />
+            <img src="/images/extra/Rectangle 368.svg" className={styles.six} />
+            <img src="/images/extra/Ellipse 403.svg" className={styles.seven} />
+            <img src="/images/extra/Ellipse 404.svg" className={styles.eight} />
+            <img src="/images/extra/Ellipse 401.svg" className={styles.nine} />
+            
+        </div>
         </div>
     </div>
   )

@@ -2,7 +2,7 @@ import styles from "../styles/helper/Services.module.css"
 
 export default function Services() {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id='services'>
         <div className={styles.services}>
             <h1>SERVICES</h1>
             <div className={styles.grid_card}>
