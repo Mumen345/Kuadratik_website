@@ -11,6 +11,8 @@
 
 
 .container {
+    font-family: 'Inter';
+
     display: flex;
     justify-content: center;
     width: 70%;
@@ -39,7 +41,11 @@
     border-radius: 4px;
     padding: 15px;
     width: 100%;
-    margin: 8px 0;
+
+    margin: 8px 0 30px 0;
+    margin-left: auto;
+
+    
     box-sizing: border-box;
 }
 

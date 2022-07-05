@@ -23,6 +23,9 @@
 .header span{
     color: #d4b62d;
 }
+.transition{
+    color: #d4b62d;
+}
 .header p{
     font-family:'Inter';
     font-style: normal;
