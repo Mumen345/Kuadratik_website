@@ -1,12 +1,16 @@
+
 import styles from "../styles/connect.module.css"
+
 import Footer from "../componets/Footer";
 import Nav from "../componets/Nav";
 
 export default function connect() {
   return (
+
     <>
     <Nav/>
     <div className={styles.container}>
+
         <div className={styles.contactDiv}>
           <h2>Get in touch</h2>
           <div className={styles.inputDiv}>
@@ -18,7 +22,10 @@ export default function connect() {
 
               <div class={styles.Iconinside}>
                 <input type="email" placeholder="Email address" />
+
                 <img src="images/extra/contact-light.svg" alt="contactus img" />
+
+
               </div>
             </div>
             <div className={styles.emailName}>
@@ -28,7 +35,11 @@ export default function connect() {
               <br />
               <div class={styles.Iconinside}>
                 <input type="email" placeholder="Email address" />
+
                 <img src="images/extra/message-box.svg" alt="contactus img" />
+
+               
+
               </div>
             </div>
             <div className={styles.emailName}>
@@ -53,6 +64,7 @@ export default function connect() {
 
         <img
           className={styles.contact_img}
+
           src="images/extra/people.webp"
           alt="contactus img"
         />
@@ -60,6 +72,7 @@ export default function connect() {
     <Footer/>
     </>
   )
+
 }
 
 

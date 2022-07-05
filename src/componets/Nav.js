@@ -1,14 +1,14 @@
-import styles from '../styles/helper/Nav.module.css'
-import Link from "next/link"
-import { useRef } from 'react'
-
+import styles from "../styles/helper/Nav.module.css";
+import Link from "next/link";
+import { useRef } from "react";
 
 export default function Nav() {
-const navRef= useRef()
-const showNavBar=()=>{
-  navRef.current.classList.toggle(`${styles.responsive_nav}`)
-}
+  const navRef = useRef();
+  const showNavBar = () => {
+    navRef.current.classList.toggle(`${styles.responsive_nav}`);
+  };
   return (
+
     
         <div className={styles.nav}> 
        <Link href='/'><a><img src="/images/logo.svg" className={styles.navimg}/></a></Link>
@@ -33,4 +33,5 @@ const showNavBar=()=>{
         </div>
    
   )
+
 }
