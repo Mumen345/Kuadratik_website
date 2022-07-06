@@ -1,79 +1,101 @@
-
-import styles from "../styles/connect.module.css"
-
+import styles from "../styles/connect.module.css";
+import { useFormik } from "formik";
 import Footer from "../componets/Footer";
+import * as Yup from "yup";
 import Nav from "../componets/Nav";
-
-export default function connect() {
+// import FormHelper from "../componets/FormHelper";
+export default function SignupForm() {
+  const formik = useFormik({
+    initialValues: {
+      fullName: "",
+      email: "",
+      message: "",
+    },
+    validationSchema: Yup.object({
+      fullName: Yup.string().required("Required"),
+      email: Yup.string().email("Invalid email address").required("Required"),
+      message: Yup.string()
+        .max(20, "Must be 20 characters or less")
+        .required("Required"),
+    }),
+    onSubmit: (values) => {
+      console.log(values);
+    },
+  });
+  console.log(formik.touched);
   return (
-
     <>
-    <Nav/>
-    <div className={styles.container}>
-
+      <Nav />
+      <div className={styles.container}>
         <div className={styles.contactDiv}>
           <h2>Get in touch</h2>
-          <div className={styles.inputDiv}>
-            <div>
-              <label className={styles.labeltext} htmlFor="fname">
-                Full Name
-              </label>
-              <br />
 
-              <div className={styles.Iconinside}>
-                <input type="email" placeholder="Email address" />
-
-                <img src="images/extra/contact-light.svg" alt="contactus img" />
-
-
-              </div>
+          <form onSubmit={formik.handleSubmit}>
+            <label className={styles.labeltext} htmlFor="fullName">
+              First Name
+            </label>
+            <div className={styles.Iconinside}>
+              <input
+                id="fullName"
+                name="fullName"
+                type="text"
+                onBlur={formik.handleBlur}
+                onChange={formik.handleChange}
+                value={formik.values.fullName}
+              />
+              <img src="/images/user_img.svg" />
             </div>
-            <div className={styles.emailName}>
-              <label className={styles.labeltext} htmlFor="lnamex">
-                Email
-              </label>
-              <br />
-              <div className={styles.Iconinside}>
-                <input type="email" placeholder="Email address" />
-
-                <img src="images/extra/message-box.svg" alt="contactus img" />
-
-               
-
-              </div>
-            </div>
-            <div className={styles.emailName}>
-              <label className={styles.labeltext} htmlFor="lname">
-                Your message
-              </label>
-              <br />
-              <textarea
-                rows="4"
-                cols="50"
-                className={styles.inputName}
+            {formik.touched.fullName && formik.errors.fullName ? (
+              <p className={styles.errorMessage}>{formik.errors.fullName}</p>
+            ) : null}
+            <label className={styles.labeltext} htmlFor="email">
+              Email Address
+            </label>
+            <div className={styles.Iconinside}>
+              <input
+                id="email"
+                name="email"
                 type="email"
-                name="lastname"
-                placeholder="Your last name.."
-              ></textarea>
+                onBlur={formik.handleBlur}
+                onChange={formik.handleChange}
+                value={formik.values.email}
+              />
+              <img src="/images/messageses.svg" />
             </div>
-            <div>
-              <button className={styles.contactUsButton}>Send Message</button>
-            </div>
-          </div>
+            {formik.touched.email && formik.errors.email ? (
+              <p className={styles.errorMessage}>{formik.errors.email}</p>
+            ) : null}
+
+            <label className={styles.labeltext} htmlFor="message">
+              Message
+            </label>
+            <textarea
+              rows={5}
+              id="message"
+              name="message"
+              type="text"
+              className={styles.Iconinside}
+              onChange={formik.handleChange}
+              onBlur={formik.handleBlur}
+              value={formik.values.message}
+            ></textarea>
+            {formik.touched.message && formik.errors.message ? (
+              <p className={styles.errorMessage}>{formik.errors.message}</p>
+            ) : null}
+
+            <button type="submit" className={styles.contactUsButton}>
+              Submit
+            </button>
+          </form>
         </div>
 
         <img
           className={styles.contact_img}
-
           src="images/extra/people.webp"
           alt="contactus img"
         />
       </div>
-    <Footer/>
+      <Footer />
     </>
-  )
-
+  );
 }
-
-
-
