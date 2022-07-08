@@ -1,14 +1,23 @@
 .container{
     background: #FFCB14;
     padding: 3em;
+
 }
 .why{
     background: #fff;
     padding: 4em;
     border-radius: 35.0613px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
 }
 .text{
-    width: 50%;
+    /* width: 50%; */
+}
+.gif img{
+    width: 100%;
+    height: 500px;
 }
 .text h1{
     font-weight: 700;
