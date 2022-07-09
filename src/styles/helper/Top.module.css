@@ -7,7 +7,11 @@
 .header{
     background-color: #000000;
     padding: .1em 4em;
+<<<<<<< Updated upstream
     height: 600px;
+=======
+    height: 550px;
+>>>>>>> Stashed changes
     
 }
 .header h1{
@@ -23,9 +27,12 @@
 .header span{
     color: #d4b62d;
 }
+<<<<<<< Updated upstream
 .transition{
     color: #d4b62d;
 }
+=======
+>>>>>>> Stashed changes
 .header p{
     font-family:'Inter';
     font-style: normal;
@@ -53,7 +60,11 @@
     margin: 0 auto;
     padding: 2em 4em;
     position: absolute;
+<<<<<<< Updated upstream
     top:500px;
+=======
+    top:200px;
+>>>>>>> Stashed changes
     left: 10%;
 }
 .product h2{
@@ -129,10 +140,16 @@
     line-height: 36px;
     }
     .product{
+<<<<<<< Updated upstream
         width:100%;
         padding: .1em 1em;
         position: initial;
         border-radius: 0;
+=======
+        width:95%;
+        padding: .1em .1em;
+        position: initial;
+>>>>>>> Stashed changes
     }
     .product .p{
         width: 100%;
