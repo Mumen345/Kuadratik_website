@@ -25,16 +25,18 @@ const [index, setIndex] =useState(0);
     <div className={styles.container}>
         <div className={styles.header}>
             <div>
-            <h1>Activate  your 
-            <TextTransition springConfig={presets.default} className={styles.transition}>
-                 {TEXTS[index % TEXTS.length]}
+            <h1>Activate your<TextTransition springConfig={presets.default} className={styles.transition}>
+             {TEXTS[index % TEXTS.length]}
+             
             </TextTransition>
-            {/* <span>creativity </span>  */}
+            
             </h1>
             <p>Build customer-driven products leveraging Kuadratiks team of experts who explore the latest technology for your optimal experience.</p>
             </div>
             {/*     INPUT THE GIF IN THE DIV BELOW */}
-                <div>      </div>
+                <div className={styles.herogif}>  
+                  <img src="/images/herogif.gif" />
+                </div>
         </div>
         
         <div className={styles.product}>

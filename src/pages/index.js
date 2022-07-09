@@ -8,13 +8,15 @@ import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <>
       <Nav/>
+     
       <Top/>
       <Services/>
       <Why/>
       <Playbook/>
+      
       <Footer/>
-    </div>
+      </>
   )
 }

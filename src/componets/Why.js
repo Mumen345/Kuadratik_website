@@ -49,6 +49,9 @@ export default function Why() {
             
             </div>
             </div>
+            <div className={styles.gif}>
+                <img src="\images\why_choose_us.gif" />
+            </div>
         </div>
     </div>
   )
