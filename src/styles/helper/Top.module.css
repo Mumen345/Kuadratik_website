@@ -7,6 +7,9 @@
 .header{
     background-color: #000000;
     padding: .1em 4em;
+
+    height: 600px;
+
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -62,6 +65,9 @@
     margin: 0 auto;
     padding: 4em 4em;
     position: absolute;
+
+    top:500px;
+    top:200px;
     top:600px;
     left: 10%;
 }
@@ -145,6 +151,7 @@
     
     }
     .product{
+
         width:100%;
         padding: .1em 1em;
         position: initial;
@@ -153,6 +160,7 @@
     }
     .product h2{
         font-size: 28px;
+
     }
     .product .p{
         width: 100%;

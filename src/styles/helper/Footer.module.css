@@ -2,7 +2,9 @@
     background: #000000;
     color: white;
     margin-bottom: 0;
-    background-image: url("/public/images/Bg Footer.png");
+  background-image: url('/images/footer_img.svg');
+  background-repeat: no-repeat;
+  background-position-y: bottom;
 }
 .nav p{
     text-align: center;
