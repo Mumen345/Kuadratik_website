@@ -6,7 +6,7 @@ padding-top:3em ;
     background: #000000;
     border-radius: 30px;
     color: white;
-    padding:3em 4em;
+    padding:5em 4em;
     width:90%;
     margin: 1em auto;
 
@@ -26,6 +26,7 @@ padding-top:3em ;
     grid-template-columns: 1fr 1fr;
     justify-content: space-between;
     align-items: center;
+    padding-bottom:2em ;
 }
 .hero{
     margin-left: auto;
