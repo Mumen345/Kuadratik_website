@@ -89,6 +89,7 @@ text-align: center;
         padding: 1em;
         border-radius: 0;
         width: 100%;
+        grid-template-columns: 1fr;
     }
     .text{
         width: 90%;
@@ -96,7 +97,7 @@ text-align: center;
     }
     .text h1{
         font-weight: 700;
-        font-size: 30px;
+        font-size: 28px;
         line-height: 51px;
         color: #404040;
     }
@@ -104,7 +105,7 @@ text-align: center;
         font-family: 'Inter';
         font-style: normal;
         font-weight: 700;
-        font-size: 20px;
+        font-size: 18px;
         line-height: 26px;
         
     }
@@ -112,7 +113,7 @@ text-align: center;
         font-family: 'Inter';
         font-style: normal;
         font-weight: 400;
-        font-size: 16px;
+        font-size: 15px;
         line-height: 26px;
         color: #404040;
     }
@@ -121,7 +122,7 @@ text-align: center;
         font-family: 'Inter';
         font-style: normal;
         font-weight: 800;
-        font-size: 22px;
+        font-size: 20px;
         line-height: 31px;
         text-align: center;
         
@@ -134,5 +135,8 @@ text-align: center;
             line-height: 20px;
             text-align: center;
             margin-top: 0;
+        }
+        .gif{
+            display: none;
         }
 }
