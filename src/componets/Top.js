@@ -25,7 +25,7 @@ const [index, setIndex] =useState(0);
     <div className={styles.container}>
         <div className={styles.header}>
             <div>
-            <h1>Activate <TextTransition springConfig={presets.default} className={styles.transition}>
+            <h1>Activate your<TextTransition springConfig={presets.default} className={styles.transition}>
              {TEXTS[index % TEXTS.length]}
              
             </TextTransition>

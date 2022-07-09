@@ -13,9 +13,7 @@
     justify-content: center;
     align-items: flex-start;
 }
-.herogif {
-    display: none;
-}
+
 .header h1{
     margin-top: 2em;
     font-family:'Inter';
@@ -137,6 +135,9 @@
         font-size: 50px;
         /* text-align: center; */
     }
+    .herogif {
+        display: none;
+    }
 .header p{
     font-size: 22px;
     line-height: 36px;
@@ -148,12 +149,20 @@
         padding: .1em 1em;
         position: initial;
         border-radius: 0;
+        padding-top: 3em;
+    }
+    .product h2{
+        font-size: 28px;
     }
     .product .p{
         width: 100%;
     }
     .product .p_screen{
         display: block;
+        width: 150px;
+    }
+    .p_details img{
+        width: 100px;
     }
     .eki{
         display: block;
