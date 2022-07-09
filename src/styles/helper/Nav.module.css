@@ -20,14 +20,21 @@
     margin-left: auto;
     align-items: center;
     z-index: 9999;
-    gap: 1em;
+    gap: 3em;
     cursor:pointer
-
+}
+.nav li{
+    list-style: none;
+    display: grid;
+    place-items: center;
+    height: 40px;
+    width: 120px;
 }
 .nav .tabs{
     list-style: none;
-    width: 118px;
+    /* width: 118px; */
     /* height: 15.79px; */
+    
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
@@ -38,12 +45,22 @@
 
 .nav .tabs.activetabs{
     text-align: center;
+    padding: 5 px 0;
+    border-bottom: 4px solid #D0411E;
+}
+.connect{
+    font-family: "Inter";
+    text-align: center;
     background: #D0411E;
     box-shadow: 0px 6.87654px 13.7531px rgba(0, 0, 124, 0.24);
     border-radius: 42.9784px;
     width: 158.26px;
     padding: 5px 0;
+    font-size: 17.7277px;
+    color: white;
+    height: 40px;
 }
+
 
 .nav_btn{
     margin-right: 10px;
