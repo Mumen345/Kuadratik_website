@@ -4,6 +4,7 @@
 }
 .playbook{
     background: #000000;
+    background-image: url('/images/playbook_bg.svg');
     padding: 4em;
     color: #fff;
     margin: 5em 3em;
