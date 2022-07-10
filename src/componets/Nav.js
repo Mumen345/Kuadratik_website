@@ -15,7 +15,8 @@ export default function Nav() {
       if (router.asPath == "/about" ||"/contact"){
         
         await Router.push("/");
-        await (document.querySelector( '#services' )).scrollIntoView( { behavior: 'smooth', block: 'start' } )
+        let selected =(document.querySelector( '#services' ))
+       selected.scrollIntoView( { behavior: 'smooth', block: 'start' } )
       }
     }
     // const view=()=>{
@@ -37,7 +38,7 @@ export default function Nav() {
             <ul ref={navRef} className={styles.flow}>
                 <li
                 className={`${styles.tabs} ${router.pathname=="/about"?styles.activetabs:""}`}
-                onClick={() => { Router.push("/about"); toogleTab(null)              }}
+                onClick={() => { Router.push("/about")}}
                 
                 >About</li>
                 <li 
