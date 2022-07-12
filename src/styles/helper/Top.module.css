@@ -1,10 +1,11 @@
-.container{
-    background: #E9FEFF;
+.container {
+    background: #FFFFFF;
     overflow-x: hidden;
     position: relative;
-    min-height:2200px;
+    min-height: 2200px;
 }
-.header{
+
+.header {
     background-color: #000000;
     padding: .1em 4em;
 
@@ -17,9 +18,9 @@
     align-items: flex-start;
 }
 
-.header h1{
-    margin-top: 2em;
-    font-family:'Inter';
+.header h1 {
+    /* margin-top: 2em; */
+    font-family: 'Inter';
     font-style: normal;
     font-weight: 800;
     font-size: 60.2809px;
@@ -28,26 +29,34 @@
     color: #FFFFFF;
     /* width: 100%; */
 }
-.header span{
+
+.header span {
     color: #d4b62d;
 }
-.transition{
+
+.transition {
     color: #d4b62d;
+
 }
-.header p{
-    font-family:'Inter';
+
+.header p {
+    font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 22px;
     line-height: 43px;
     color: #FFFFFF;
     /* width: 60%; */
-    
-    
+
+
 }
-.herogif img{
+
+.hero_texts {}
+
+.herogif img {
     width: 100%;
 }
+
 /* .curve{
     height:300px;
     width: 100%;
@@ -58,20 +67,22 @@
     right: 0;
     top: 350px;
 } */
-.product{
+.product {
     background: #FFFFFF;
-    border-radius: 45.7522px;
+    border-radius: 46px;
     width: 80%;
     margin: 0 auto;
     padding: 4em 4em;
     position: absolute;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 
-    top:500px;
-    top:200px;
-    top:600px;
+    top: 540px;
+    /* top: 200px;
+    top: 600px; */
     left: 10%;
 }
-.product h2{
+
+.product h2 {
     text-align: center;
     font-family: 'Inter';
     font-style: normal;
@@ -80,7 +91,8 @@
     line-height: 44px;
     color: #000000;
 }
-.product .p{
+
+.product .p {
     text-align: center;
     width: 50%;
     margin: 0 auto;
@@ -93,122 +105,146 @@
     text-align: center;
     color: #000000;
 }
-.product_grid{
+
+.product_grid {
     display: grid;
     gap: 4em;
     padding-bottom: 3em;
 }
-.p_details p{
+
+.p_details p {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
-    font-size: 18px;
-    line-height: 26px;
+    /* font-size: 18px; */
+    line-height: 30px;
     letter-spacing: 0.292814px;
     color: #000000;
 }
-.eki{
+
+.eki {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
-.eki .p_screen{
+
+.eki .p_screen {
     order: 2;
     margin-left: auto;
 }
-.teddyship{
+
+.teddyship {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
-.teddyed{
+
+.teddyed {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
-.teddyed .p_screen{
+
+.teddyed .p_screen {
     order: 2;
     margin-left: auto;
 }
-.jolificate{
+
+.jolificate {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
+
 @media (max-width:900px) {
-    .header{
+    .header {
         padding: .1em 3em;
         padding-left: 3em;
         height: auto;
     }
-    .header h1{
+
+    .header h1 {
         font-size: 50px;
         /* text-align: center; */
     }
+
     .herogif {
         display: none;
     }
-.header p{
-    font-size: 22px;
-    line-height: 36px;
-    width: 90vw;
-    
-    }
-    .product{
 
-        width:100%;
+    .header p {
+        font-size: 17px;
+        line-height: 36px;
+        width: 90vw;
+    }
+
+    .product {
+        width: 100%;
         padding: .1em 1em;
         position: initial;
         border-radius: 0;
         padding-top: 3em;
     }
-    .product h2{
+
+    .product h2 {
         font-size: 28px;
 
     }
-    .product .p{
+
+    .product .p {
         width: 100%;
+        font-size: 16px;
     }
-    .product .p_screen{
+
+    .product .p_screen {
         display: block;
         width: 150px;
     }
-    .p_details img{
+
+    .p_details img {
         width: 100px;
     }
-    .eki{
+
+    .eki {
         display: block;
         gap: 2em;
         justify-content: center;
         align-items: center;
         text-align: justify;
-        
+
     }
-    .eki .p_screen{
+
+    .eki .p_screen {
         /* order: 2; */
-        margin:0 auto;
+        margin: 0 auto;
     }
-    .teddyship{
+
+    .teddyship {
         display: block;
         text-align: grid;
         grid-template-columns: auto;
     }
-    .teddyship .p_screen{
+
+    .teddyship .p_screen {
         /* order: 2; */
-        margin:0 auto;
+        margin: 0 auto;
     }
-    .teddyed{
+
+    .teddyed {
         display: block;
         text-align: grid;
         grid-template-columns: auto;
     }
-    .teddyed .p_screen{
+
+    .teddyed .p_screen {
         /* order: 2; */
-        margin:0 auto;
+        margin: 0 auto;
     }
-    .jolificate{
+
+    .jolificate {
         display: block;
         text-align: grid;
         grid-template-columns: auto;
     }
-    .jolificate .p_screen{
+
+    .jolificate .p_screen {
         /* order: 2; */
-        margin:0 auto;
+        margin: 0 auto;
     }
 }
