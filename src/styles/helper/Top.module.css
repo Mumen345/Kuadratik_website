@@ -1,33 +1,30 @@
 .container {
-    background: #FFFFFF;
-    overflow-x: hidden;
-    position: relative;
-    min-height: 2200px;
+    background: rgb(255, 255, 255);
+
+}
+
+.blackdiv {
+    background-color: #000000;
 }
 
 .header {
     background-color: #000000;
-    padding: .1em 4em;
-
-    height: 600px;
-
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    padding: .1em 4em 4em;
+    display: flex;
     justify-content: center;
     align-items: flex-start;
+    height: 85vh;
+    max-width: 1500px;
+    margin: 0 auto;
 }
 
 .header h1 {
-    /* margin-top: 2em; */
     font-family: 'Inter';
     font-style: normal;
     font-weight: 800;
-    font-size: 60.2809px;
-    /* line-height: 97px; */
+    font-size: 61px;
     letter-spacing: 0.11em;
     color: #FFFFFF;
-    /* width: 100%; */
 }
 
 .header span {
@@ -43,8 +40,9 @@
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
-    font-size: 22px;
+    font-size: 20px;
     line-height: 43px;
+    width: 80%;
     color: #FFFFFF;
     /* width: 60%; */
 
@@ -71,15 +69,10 @@
     background: #FFFFFF;
     border-radius: 46px;
     width: 80%;
-    margin: 0 auto;
+    margin: -100px auto;
     padding: 4em 4em;
-    position: absolute;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-
-    top: 540px;
-    /* top: 200px;
-    top: 600px; */
-    left: 10%;
+    max-width: 1400px;
 }
 
 .product h2 {
@@ -152,6 +145,17 @@
     grid-template-columns: repeat(2, 1fr);
 }
 
+@media (min-width:1540px) {
+    .header {
+        background-color: #000000;
+        padding: .1em 4em 4em;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        height: 80vh;
+    }
+}
+
 @media (max-width:900px) {
     .header {
         padding: .1em 3em;
@@ -180,6 +184,7 @@
         position: initial;
         border-radius: 0;
         padding-top: 3em;
+        margin: 0px auto;
     }
 
     .product h2 {
@@ -248,3 +253,21 @@
         margin: 0 auto;
     }
 }
+
+/* @media screen and (min-width: 1400px) {
+    .container {
+        width: 1370px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .container {
+        width: 1570px;
+    }
+}
+
+@media screen and (min-width: 1900px) {
+    .container {
+        width: 1870px;
+    }
+} */

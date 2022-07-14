@@ -1,17 +1,20 @@
 .container {
-    background: #FFCB14;
-    padding: 3em;
+    background: #000000;
+    padding: 5em;
+    margin-top: 100px;
 
 }
 
 .why {
     background: #fff;
     padding: 4em;
-    border-radius: 35.0613px;
+    border-radius: 35px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: center;
+    max-width: 1500px;
+    margin: 0 auto;
 }
 
 .text {

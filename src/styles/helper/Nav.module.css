@@ -1,3 +1,7 @@
+.container {
+    background-color: #000000;
+}
+
 .nav {
     font-family: 'Inter', sans-serif;
     background: #000000;
@@ -9,6 +13,8 @@
     top: 0;
     z-index: 999;
     cursor: pointer;
+    max-width: 1920px;
+    margin: 0 auto;
 
 }
 
@@ -42,7 +48,7 @@
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
-    font-size: 17.7277px;
+    font-size: 16;
     line-height: 27px;
     color: #FFFFFF;
 }
@@ -61,9 +67,8 @@
     border-radius: 42.9784px;
     width: 158.26px;
     padding: 5px 0;
-    font-size: 17.7277px;
+    font-size: 16;
     color: white;
-    height: 40px;
 }
 
 
