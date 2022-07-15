@@ -31,50 +31,54 @@ export default function Nav() {
 
   return (
     <>
-      <div className={styles.nav}>
-        <Link href="/">
-          <a>
-            <img src="/images/logo.svg" className={styles.navimg} />
-          </a>
-        </Link>
-        <ul ref={navRef} className={styles.flow}>
-          <li
-            className={`${styles.tabs} ${
-              router.pathname == "/about" ? styles.activetabs : ""
-            }`}
-            onClick={() => {
-              Router.push("/about");
-            }}
-          >
-            About
-          </li>
-          <li
-            className={`${styles.tabs} ${toogleState ? styles.activetabs : ""}`}
-            onClick={async () => {
-              await toogleTab(3);
-              await scroll();
-            }}
-          >
-            Services
-          </li>
+      <div className={styles.container}>
+        <div className={styles.nav}>
+          <Link href="/">
+            <a>
+              <img src="/images/logo.svg" className={styles.navimg} />
+            </a>
+          </Link>
+          <ul ref={navRef} className={styles.flow}>
+            <li
+              className={`${styles.tabs} ${
+                router.pathname == "/about" ? styles.activetabs : ""
+              }`}
+              onClick={() => {
+                Router.push("/about");
+              }}
+            >
+              About
+            </li>
+            <li
+              className={`${styles.tabs} ${
+                toogleState ? styles.activetabs : ""
+              }`}
+              onClick={async () => {
+                await toogleTab(3);
+                await scroll();
+              }}
+            >
+              Services
+            </li>
 
-          <li
-            className={styles.connect}
-            onClick={() => router.push("/connect")}
-          >
-            Connect
-          </li>
-          <img
-            className={`${styles.nav_btn} ${styles.nav_close_btn}`}
-            src="/images/close1.svg"
-            style={{ filter: "invert(100%)" }}
-            onClick={showNavBar}
-          />
-        </ul>
-        <div className={styles.nav_btn} onClick={showNavBar}>
-          <div className={styles.one}></div>
-          <div className={styles.two}></div>
-          <div className={styles.three}></div>
+            <li
+              className={styles.connect}
+              onClick={() => router.push("/connect")}
+            >
+              Connect
+            </li>
+            <img
+              className={`${styles.nav_btn} ${styles.nav_close_btn}`}
+              src="/images/close1.svg"
+              style={{ filter: "invert(100%)" }}
+              onClick={showNavBar}
+            />
+          </ul>
+          <div className={styles.nav_btn} onClick={showNavBar}>
+            <div className={styles.one}></div>
+            <div className={styles.two}></div>
+            <div className={styles.three}></div>
+          </div>
         </div>
       </div>
     </>
