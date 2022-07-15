@@ -2,6 +2,7 @@
     background-color: #000000;
     position: sticky;
     top: 0;
+    z-index: 10000000000000999;
 }
 
 .nav {
@@ -11,7 +12,7 @@
     max-height: 100%;
     display: flex;
     align-items: center;
-    z-index: 999;
+    z-index: 10000000000000999;
     cursor: pointer;
     max-width: 1920px;
     margin: 0 auto;
@@ -19,7 +20,7 @@
 }
 
 .nav img {
-    width: 150px;
+    width: 120px;
 
 }
 
@@ -28,8 +29,7 @@
     margin-left: auto;
     align-items: center;
     z-index: 9999;
-    gap: 3em;
-    cursor: pointer
+    gap: 1em;
 }
 
 .nav li {
@@ -37,6 +37,7 @@
     display: grid;
     place-items: center;
     /* height: 40px; */
+    cursor: pointer;
     width: 120px;
 }
 
@@ -56,13 +57,13 @@
 .nav .tabs.activetabs {
     text-align: center;
     padding: 5px 0;
-    border-bottom: 4px solid #D0411E;
+    border-bottom: 3px solid #ff0000;
 }
 
 .connect {
     font-family: "Inter";
     text-align: center;
-    background: #D0411E;
+    background: #ff0000;
     box-shadow: 0px 6.87654px 13.7531px rgba(0, 0, 124, 0.24);
     border-radius: 42.9784px;
     width: 158.26px;

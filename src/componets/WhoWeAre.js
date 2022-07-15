@@ -7,6 +7,9 @@ export default function WhoWeAre() {
       </div> */}
       <div className={styles.details}>
         <div>
+          <img src="/images/who_we_are.png" />
+        </div>
+        <div className={styles.text}>
           <div>
             <h1>Who We Are</h1>
             <p>
@@ -32,19 +35,6 @@ export default function WhoWeAre() {
               shape cultural landscapes and get people connected globally.
             </p>
           </div>
-
-          <div>
-            <h1>Our Values</h1>
-            <ol>
-              <li>Quality</li>
-              <li>Integrity</li>
-              <li>Excellence.</li>
-              <li>Adaptability.</li>
-            </ol>
-          </div>
-        </div>
-        <div>
-          <img src="/images/whoweare.png" />
         </div>
       </div>
     </div>

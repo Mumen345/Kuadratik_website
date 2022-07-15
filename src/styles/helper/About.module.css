@@ -1,64 +1,77 @@
-.container{
+.container {
     position: relative;
-    
+    display: flex;
+    flex-direction: column;
+    max-width: 1500px;
+    margin: 0 auto;
+
 }
-.header{
-    height: 175px;
+
+.header {
+    height: auto;
     background-image: url("/images/Photo.png");
     display: flex;
+    width: 100%;
     /* padding: 2em; */
-   
+
 }
-.header h1{
+
+.header h1 {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
-    font-size: 54px;
+    font-size: 40px;
     line-height: 80px;
     color: #FFFFFF;
     padding-left: 2em;
-    
+
 }
-.grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+
+.grid {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    /* grid-template-columns: 1fr 1fr; */
 }
-.details{
-    padding-inline:3em;
-    padding-top:1.5em;
-    padding-bottom:3em;
+
+.details {
+    padding-inline: 3em;
+    padding-top: 1.5em;
+    padding-bottom: 3em;
 }
-.details h1{
+
+.details h1 {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 24px;
     line-height: 44px;
     color: #404040;
 }
-.details p{
+
+.details p {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
-    font-size: 20px;
+    /* font-size: 20px; */
     line-height: 170.9%;
     letter-spacing: 0.04em;
-    color: #474747;
+    color: #404040;
     margin-bottom: 2em;
 }
 
 
-.img img{
-    position: absolute;
-    top: 70px;
-    right: 70px;
+.img img {
+    margin-top: -15%;
 }
-@media (max-width:900px){
-    .header{
+
+@media (max-width:900px) {
+    .header {
         justify-content: center;
         height: 140px;
     }
-    .header h1{
+
+    .header h1 {
         font-family: 'Inter';
         font-style: normal;
         font-weight: 500;
@@ -67,31 +80,35 @@
         color: #FFFFFF;
         padding-left: 0em;
         text-align: center;
-        
+
     }
-    .img img{
+
+    .img img {
         position: initial;
         display: none;
     }
-    .grid{
+
+    .grid {
         grid-template-columns: 1fr;
     }
-    
-    .details{
-        padding-inline:1.5em;
-        padding-top:1.5em;
-        padding-bottom:1em;
+
+    .details {
+        padding-inline: 1.5em;
+        padding-top: 1.5em;
+        padding-bottom: 1em;
     }
-    .details h1{
+
+    .details h1 {
         font-family: 'Inter';
         font-style: normal;
         font-weight: 700;
         font-size: 32px;
         line-height: 44px;
         color: #404040;
-        margin:1.5em 0 ;
+        margin: 1.5em 0;
     }
-    .details p{
+
+    .details p {
         font-family: 'Inter';
         font-style: normal;
         font-weight: 500;
