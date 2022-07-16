@@ -50,7 +50,7 @@ export default function Top() {
         </p>
         <div className={styles.product_grid}>
           <div className={styles.eki}>
-            <img src="/images/eki-screen.svg" className={styles.p_screen} />
+            <img src="/images/eki-screen.png" className={styles.p_screen} />
             <div className={styles.p_details}>
               <img src="/images/eki-logo.svg" />
               <p>
@@ -61,7 +61,7 @@ export default function Top() {
             </div>
           </div>
           <div className={styles.teddyship}>
-            <img src="/images/teddy-screen.svg" className={styles.p_screen} />
+            <img src="/images/teddy-screen.png" className={styles.p_screen} />
             <div className={styles.p_details}>
               <img src="/images/teddy-logo.svg" />
               <p>
@@ -72,9 +72,12 @@ export default function Top() {
             </div>
           </div>
           <div className={styles.teddyed}>
-            <img src="/images/teddyed-screen.svg" className={styles.p_screen} />
-            <div className={styles.p_details}>
-              <img src="/images/teddyed-logo.svg" />
+            <img src="/images/teddyed-screen.png" className={styles.p_screen} />
+            <div>
+              <img
+                className={styles.teddyedimg}
+                src="/images/teddyed-logo.svg"
+              />
               <p>
                 A modular school management system that streamlines routine
                 school workflows to focus on what matters most - your students!
@@ -83,7 +86,7 @@ export default function Top() {
           </div>
           <div className={styles.jolificate}>
             <img
-              src="/images/jollificate-screen.svg"
+              src="/images/jollificate-screen.png"
               className={styles.p_screen}
             />
             <div className={styles.p_details}>

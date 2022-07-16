@@ -6,9 +6,7 @@ export default function WhoWeAre() {
         <h1></h1>
       </div> */}
       <div className={styles.details}>
-        <div>
-          <img src="/images/who_we_are.png" />
-        </div>
+        <img src="/images/who_we_are.png" />
         <div className={styles.text}>
           <div>
             <h1>Who We Are</h1>

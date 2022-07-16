@@ -1,5 +1,5 @@
 .container {
-    background: #000000;
+    background: #FFCB14;
     padding: 5em;
     margin-top: 100px;
 
@@ -101,7 +101,7 @@
     }
 
     .why {
-        background: #fff;
+        background: #FFCB14;
         padding: 1em;
         border-radius: 0;
         width: 100%;
@@ -117,7 +117,7 @@
         font-weight: 700;
         font-size: 28px;
         line-height: 51px;
-        color: #404040;
+        color: #111111;
     }
 
     .details h3 {
@@ -125,7 +125,7 @@
         font-style: normal;
         font-weight: 700;
         font-size: 18px;
-        line-height: 26px;
+        color: #111111;
 
     }
 
@@ -135,7 +135,7 @@
         font-weight: 400;
         font-size: 15px;
         line-height: 26px;
-        color: #404040;
+        color: #111111;
     }
 
     .scores h4 {

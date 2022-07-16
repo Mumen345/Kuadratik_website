@@ -62,7 +62,7 @@
 
 
 .img img {
-    margin-top: -15%;
+    margin-top: -10%;
 }
 
 @media (max-width:900px) {
@@ -90,12 +90,16 @@
 
     .grid {
         grid-template-columns: 1fr;
+        display: flex;
+        width: 100%;
+        margin: 0 auto;
+        /* grid-template-columns: 1fr 1fr; */
     }
 
     .details {
         padding-inline: 1.5em;
         padding-top: 1.5em;
-        padding-bottom: 1em;
+        padding-bottom: 0em;
     }
 
     .details h1 {
@@ -105,7 +109,7 @@
         font-size: 32px;
         line-height: 44px;
         color: #404040;
-        margin: 1.5em 0;
+        /* margin: 1.5em 0; */
     }
 
     .details p {
@@ -116,7 +120,7 @@
         line-height: 150.9%;
         letter-spacing: 0.04em;
         color: #474747;
-        margin: 3em 0;
+        /* margin: 3em 0; */
         /* text-align: justify; */
     }
 }

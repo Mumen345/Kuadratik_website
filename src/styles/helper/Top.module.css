@@ -50,6 +50,10 @@
 
 }
 
+.teddyedimg {
+    width: 80% !important;
+}
+
 .hero_texts {}
 
 .herogif img {
@@ -102,8 +106,12 @@
 
 .product_grid {
     display: grid;
-    gap: 4em;
+    gap: 10em;
     padding-bottom: 3em;
+}
+
+.p_details img {
+    width: 60%;
 }
 
 .p_details p {
@@ -121,9 +129,13 @@
     grid-template-columns: repeat(2, 1fr);
 }
 
+.p_screen {
+    width: 50%;
+}
+
 .eki .p_screen {
-    order: 2;
-    margin-left: auto;
+    /* order: 2;
+    margin-left: auto; */
 }
 
 .teddyship {
@@ -165,13 +177,12 @@
 
 @media (max-width:900px) {
     .header {
-        padding: .1em 3em;
-        padding-left: 3em;
+        padding: .1em 3em 3em;
         height: auto;
     }
 
     .header h1 {
-        font-size: 50px;
+        font-size: 35px;
         /* text-align: center; */
     }
 
@@ -180,9 +191,10 @@
     }
 
     .header p {
-        font-size: 17px;
+        font-size: 16px;
         line-height: 36px;
         width: 90vw;
+        /* text-align: justify; */
     }
 
     .product {
@@ -207,6 +219,10 @@
     .product .p_screen {
         display: block;
         width: 150px;
+    }
+
+    .teddyedimg {
+        width: 100px !important;
     }
 
     .p_details img {
