@@ -1,28 +1,80 @@
 import styles from "../styles/connect.module.css";
-import { useFormik } from "formik";
+import axios from "axios"
 import Footer from "../componets/Footer";
-import * as Yup from "yup";
 import Nav from "../componets/Nav";
-// import FormHelper from "../componets/FormHelper";
+import { useRef, useState } from "react";
+
 export default function SignupForm() {
-  const formik = useFormik({
-    initialValues: {
-      fullName: "",
-      email: "",
-      message: "",
-    },
-    validationSchema: Yup.object({
-      fullName: Yup.string().required("Required"),
-      email: Yup.string().email("Invalid email address").required("Required"),
-      message: Yup.string()
-        .max(20, "Must be 20 characters or less")
-        .required("Required"),
-    }),
-    onSubmit: (values) => {
-      console.log(values);
-    },
+  const emailForm = useRef(null)
+  const [fullName, setFullName] = useState('')
+  const [email, setEmail] = useState('')
+  const [message, setMessage] = useState('')
+  const [formErrors, setFormErrors] = useState({
+    fullName: "",
+    email: "",
+    message: "",
+    
   });
-  console.log(formik.touched);
+
+  // global.FormData = FormData
+  // let FormData = require('form-data');
+  // const sendForm = new FormData(emailForm.current);
+
+const validateNdForward=async (e)=>{
+  e.preventDefault()
+  let  errorObj={}
+
+
+!fullName ? (errorObj.fullName = "Field is required") : null;
+!message ? (errorObj.message = "Field is required") : null;
+
+let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+!email
+  ? (errorObj.email = "Field is required")
+  : regexEmail.test(email) == false
+  ? (errorObj.email = "Field is not a valid email address")
+  : null;
+
+  if (Object.keys(errorObj).length > 0) {
+    setFormErrors(errorObj);
+    return;
+  }
+  setFormErrors("")
+  
+ 
+  let sendForm =new FormData(emailForm.current);
+    for (var par of sendForm.entries()) {
+      console.log(par[0], par[1]);
+    }
+  
+let formData={
+  fullName:sendForm.get("fullName"),
+  email:sendForm.get("email"),
+  message: sendForm.get("message")
+}
+console.log({formData})
+try {
+  const response= await axios.post('https://jsonplaceholder.typicode.com/posts',{formData,
+  headers: {
+    'Content-type': 'application/json; charset=UTF-8',
+  },
+    
+})
+console.log(response)
+alert("Succesfull")
+
+} catch (error) {
+  console.log(error)
+  alert(error)
+}
+    setFullName("")
+    setEmail("")
+    setMessage("")
+
+
+// console.log(response)
+}
+  
   return (
     <>
       <Nav />
@@ -30,60 +82,61 @@ export default function SignupForm() {
         <div className={styles.contactDiv}>
           <h2>Get in touch</h2>
 
-          <form onSubmit={formik.handleSubmit}>
-            <label className={styles.labeltext} htmlFor="fullName">
+          <form  ref={emailForm}>
+            <label className={styles.labeltext}>
               First Name
             </label>
             <div className={styles.Iconinside}>
               <input
-                id="fullName"
-                name="fullName"
+                // id="fullName"
+                name={"fullName"}
                 type="text"
-                onBlur={formik.handleBlur}
-                onChange={formik.handleChange}
-                value={formik.values.fullName}
+                // onBlur={formik.handleBlur}
+                onChange={(e)=> setFullName(e.target.value)}
+                value={fullName}
               />
               <img src="/images/user_img.svg" />
             </div>
-            {formik.touched.fullName && formik.errors.fullName ? (
-              <p className={styles.errorMessage}>{formik.errors.fullName}</p>
+            {formErrors.fullName ? (
+              <p className={styles.errorMessage}>{formErrors.fullName}</p>
             ) : null}
-            <label className={styles.labeltext} htmlFor="email">
+            <label className={styles.labeltext} >
               Email Address
             </label>
             <div className={styles.Iconinside}>
               <input
-                id="email"
-                name="email"
+                
+                name={"email"}
                 type="email"
-                onBlur={formik.handleBlur}
-                onChange={formik.handleChange}
-                value={formik.values.email}
+                // onBlur={formik.handleBlur}
+                onChange={(e)=> setEmail(e.target.value)}
+                value={email}
               />
               <img src="/images/messageses.svg" />
             </div>
-            {formik.touched.email && formik.errors.email ? (
-              <p className={styles.errorMessage}>{formik.errors.email}</p>
+            {formErrors.email? (
+              <p className={styles.errorMessage}>{formErrors.email}</p>
             ) : null}
 
-            <label className={styles.labeltext} htmlFor="message">
+            <label className={styles.labeltext} >
               Message
             </label>
             <textarea
               rows={5}
-              id="message"
-              name="message"
+              // id="message"
+              name={"message"}
               type="text"
               className={styles.Iconinside}
-              onChange={formik.handleChange}
-              onBlur={formik.handleBlur}
-              value={formik.values.message}
+              onChange={(e)=> setMessage(e.target.value)}
+              // onBlur={formik.handleBlur}
+              value={message}
             ></textarea>
-            {formik.touched.message && formik.errors.message ? (
-              <p className={styles.errorMessage}>{formik.errors.message}</p>
+            {formErrors.message ? (
+              <p className={styles.errorMessage}>{formErrors.message}</p>
             ) : null}
 
-            <button type="submit" className={styles.contactUsButton}>
+            <button type="submit" className={styles.contactUsButton}
+            onClick={validateNdForward}>
               Submit
             </button>
           </form>
