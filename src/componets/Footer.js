@@ -41,17 +41,17 @@ export default function Footer() {
           <h3>FOLLOW US</h3>
           <ul>
             <li>
-              <a href="mailto:inquires@kuadratik.com">
+              <a href="#">
                 <img src="/images/facebook.svg" />
               </a>
             </li>
             <li>
-              <a href="mailto:inquires@kuadratik.com">
+              <a href="#">
                 <img src="/images/linkenin.svg" />
               </a>
             </li>
             <li>
-              <a href="mailto:inquires@kuadratik.com">
+              <a href="#">
                 <img src="/images/twitter.svg" />
               </a>
             </li>
