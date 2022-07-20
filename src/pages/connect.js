@@ -70,23 +70,14 @@ export default function SignupForm() {
           },
         }
       );
-      if (response.status === 201) {
-        // alert("Success");
-        toast.success("Success!");
-      }
-
       console.log(response);
-      // console.log(toast.success);
       toast.success("Success!");
-    } catch (error) {
-      console.log(error);
-      alert(error);
+      setFullName("");
+      setEmail("");
+      setMessage("");
+    } catch (e) {
+      toast.error("opps something went wrong");
     }
-    setFullName("");
-    setEmail("");
-    setMessage("");
-
-    // console.log(response)
   };
 
   return (
