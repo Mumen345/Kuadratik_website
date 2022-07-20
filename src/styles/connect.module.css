@@ -34,6 +34,12 @@
     border-radius: 4px;
 }
 
+.Iconinside input {
+    width: 100%;
+    color: #404040;
+    font-weight: 700;
+}
+
 .Iconinside {
     display: flex;
     justify-content: space-between;
