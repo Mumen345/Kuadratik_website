@@ -30,8 +30,8 @@ export default function Footer() {
             <img src="/images/contact.svg" />
             <ul>
               <li>
-                <a href="mailto:inquires@kuadratik.com">
-                  inquires@kuadratik.com
+                <a href="mailto:inquiries@kuadratik.com">
+                  inquiries@kuadratik.com
                 </a>
               </li>
             </ul>
