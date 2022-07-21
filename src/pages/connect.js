@@ -51,33 +51,34 @@ export default function SignupForm() {
       message: sendForm.get("message"),
     };
     console.log({ formData });
-    // axios;
-    // .post("https://jsonplaceholder.typicode.com/posts", formData)
-    // .then((response) => {
-    //   if (response.status === 200) toast.success("Success!");
-    // })
-    // .catch((err) => {
-    //   console.log(err);
-    // });
+    axios
+      .post("https://jsonplaceholder.typicode.com/posts", formData)
+      .then((response) => {
+        if (response.status === 201) toast.success("Success!");
+      })
+      .catch((error) => {
+        console.log(error);
+        toast.error("opps something went wrong");
+      });
 
-    try {
-      const response = await axios.post(
-        "https://jsonplaceholder.typicode.com/posts",
-        {
-          formData,
-          headers: {
-            "Content-type": "application/json; charset=UTF-8",
-          },
-        }
-      );
-      console.log(response);
-      toast.success("Success!");
-      setFullName("");
-      setEmail("");
-      setMessage("");
-    } catch (e) {
-      toast.error("opps something went wrong");
-    }
+    // try {
+    //   const response = await axios.post(
+    //     "https://jsonplaceholder.typicode.com/posts",
+    //     {
+    //       formData,
+    //       headers: {
+    //         "Content-type": "application/json; charset=UTF-8",
+    //       },
+    //     }
+    //   );
+    //   console.log(response);
+    //   toast.success("Success!");
+    //   setFullName("");
+    //   setEmail("");
+    //   setMessage("");
+    // } catch (e) {
+    //   toast.error("opps something went wrong");
+    // }
   };
 
   return (

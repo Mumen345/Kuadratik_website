@@ -14,6 +14,19 @@ function MyApp({ Component, pageProps }) {
         <link rel="canonical" href="http://kuadratik.com" />
       </Helmet>
       <Component {...pageProps} />;
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={true}
+        newestOnTop={false}
+        closeOnClick={true}
+        closeButton={false}
+        rtl={false}
+        pauseOnFocusLoss={true}
+        draggable={true}
+        pauseOnHover={true}
+        theme="colored"
+      />
     </div>
   );
 }
