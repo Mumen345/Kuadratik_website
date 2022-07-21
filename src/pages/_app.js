@@ -1,5 +1,5 @@
 import "../styles/globals.css";
-import { ToastContainer, toast } from "react-toastify";
+// import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import React from "react";
 import { Helmet } from "react-helmet";
@@ -14,7 +14,7 @@ function MyApp({ Component, pageProps }) {
         <link rel="canonical" href="http://kuadratik.com" />
       </Helmet>
       <Component {...pageProps} />;
-      <ToastContainer
+      {/* <ToastContainer
         position="top-right"
         autoClose={5000}
         hideProgressBar={true}
@@ -26,7 +26,7 @@ function MyApp({ Component, pageProps }) {
         draggable={true}
         pauseOnHover={true}
         theme="colored"
-      />
+      /> */}
     </div>
   );
 }

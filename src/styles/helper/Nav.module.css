@@ -2,7 +2,7 @@
     background-color: #000000;
     position: sticky;
     top: 0;
-    z-index: 10000000000000999;
+    z-index: 99;
 }
 
 .nav {
@@ -12,7 +12,7 @@
     max-height: 100%;
     display: flex;
     align-items: center;
-    z-index: 10000000000000999;
+    z-index: 99;
     cursor: pointer;
     max-width: 1920px;
     margin: 0 auto;

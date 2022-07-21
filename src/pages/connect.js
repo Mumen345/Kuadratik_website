@@ -1,8 +1,10 @@
 import styles from "../styles/connect.module.css";
 import axios from "axios";
 import Footer from "../componets/Footer";
+// import toast, { Toaster } from "react-hot-toast";
 import Nav from "../componets/Nav";
 import { useRef, useState } from "react";
+// import { Toaster, resolveValue } from "react-hot-toast";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 export default function SignupForm() {
@@ -51,34 +53,41 @@ export default function SignupForm() {
       message: sendForm.get("message"),
     };
     console.log({ formData });
-    axios
-      .post("https://jsonplaceholder.typicode.com/posts", formData)
-      .then((response) => {
-        if (response.status === 201) toast.success("Success!");
-      })
-      .catch((error) => {
-        console.log(error);
-        toast.error("opps something went wrong");
-      });
-
-    // try {
-    //   const response = await axios.post(
-    //     "https://jsonplaceholder.typicode.com/posts",
-    //     {
-    //       formData,
-    //       headers: {
-    //         "Content-type": "application/json; charset=UTF-8",
-    //       },
-    //     }
-    //   );
+    axios;
+    // .post("https://jsonplaceholder.typicode.com/posts", formData)
+    // .then(() => {
+    //   if (response.status === 201) toast.success("Success!");
     //   console.log(response);
-    //   toast.success("Success!");
-    //   setFullName("");
-    //   setEmail("");
-    //   setMessage("");
-    // } catch (e) {
+    // })
+    // .catch((error) => {
+    //   console.log(error);
     //   toast.error("opps something went wrong");
-    // }
+    // });
+    // setFullName("");
+    // setEmail("");
+    // setMessage("");
+
+    try {
+      const response = await axios.post(
+        "https://jsonplaceholder.typicode.com/posts",
+        {
+          formData,
+          headers: {
+            "Content-type": "application/json; charset=UTF-8",
+          },
+        }
+      );
+      // toast("Hello World");
+      console.log("I dey here");
+      toast.success("Success!");
+      console.log(response);
+      setFullName("");
+      setEmail("");
+      setMessage("");
+    } catch (error) {
+      console.log("I am here");
+      toast.error("opps something went wrong");
+    }
   };
 
   return (
@@ -98,6 +107,31 @@ export default function SignupForm() {
         pauseOnHover={true}
         theme="colored"
       />
+      {/* <Toaster
+        position="top-right"
+        reverseOrder={false}
+        gutter={8}
+        containerClassName=""
+        containerStyle={{}}
+        toastOptions={{
+          // Define default options
+          className: "",
+          duration: 5000,
+          style: {
+            background: "#363636",
+            color: "#fff",
+          },
+
+          // Default options for specific types
+          success: {
+            duration: 3000,
+            theme: {
+              primary: "green",
+              secondary: "black",
+            },
+          },
+        }}
+      /> */}
       <div className={styles.container}>
         <div className={styles.contactDiv}>
           <h2>Get in touch</h2>
