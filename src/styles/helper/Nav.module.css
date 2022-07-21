@@ -104,6 +104,7 @@
     .nav {
         padding: 1em 1em;
         position: inherit;
+        z-index: 99;
     }
 
     /* .navimg{
