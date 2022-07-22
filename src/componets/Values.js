@@ -1,15 +1,9 @@
-function Values() {
+import styles from "../styles/helper/Values.module.css";
+
+export default function Values() {
   return (
-    <div>
-      <h1>Our Values</h1>
-      <ol>
-        <li>Quality</li>
-        <li>Integrity</li>
-        <li>Excellence.</li>
-        <li>Adaptability.</li>
-      </ol>
+    <div className={styles.container}>
+      <img src="/images/our_values.gif" className={styles.value} />
     </div>
   );
 }
-
-export default Values;
