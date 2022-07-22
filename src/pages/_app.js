@@ -13,7 +13,7 @@ function MyApp({ Component, pageProps }) {
         <meta name="description" content="Tag Line" />
         <link rel="canonical" href="http://kuadratik.com" />
       </Helmet>
-      <Component {...pageProps} />;
+      <Component {...pageProps} />
       {/* <ToastContainer
         position="top-right"
         autoClose={5000}
