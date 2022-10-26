@@ -1,5 +1,5 @@
 .container {
-    background-color: #000000;
+    /* background-color: #000000; */
     position: sticky;
     top: 0;
     z-index: 10000000000000999;
@@ -7,14 +7,14 @@
 
 .nav {
     font-family: 'Inter', sans-serif;
-    background: #000000;
+    /* background: #000000; */
     padding: 1em 4em;
     max-height: 100%;
     display: flex;
     align-items: center;
     z-index: 10000000000000999;
     cursor: pointer;
-    max-width: 1920px;
+    /* max-width: 1920px; */
     margin: 0 auto;
 
 }
